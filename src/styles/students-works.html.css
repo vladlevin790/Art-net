@@ -195,7 +195,6 @@ main {
     align-items: center;
     transition: .3s all;
     background: #F9F9F9;
-    cursor: pointer;
 }
 
 .services-cards:last-child {
@@ -206,28 +205,21 @@ main {
     margin-top: 20px;
 }
 
-.services-cards > img {
-    max-width: 437px;
-    max-height: 356.5px;
+.card-content {
+    transition: .3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
-.services-cards > h2 {
-    font-family: Lobster;
-    font-size: 32px;
-    width: 437px;
-    margin-bottom: 15px;
-    align-items: flex-start;
+.services-cards .card-content:hover {
+    opacity: 20%;
 }
 
-
-.services-cards > p {
-    font-size:24px;
-    max-width: 437px;
-    margin-top: 0;
-}
-
-.services-cards:hover {
-    opacity: 50% ;
+.services-cards:hover{
+    border: 5px solid rgba(228, 193, 249, 0.25);
 }
 
 .price-cards {
