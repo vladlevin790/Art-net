@@ -15,7 +15,7 @@
 <header>
     <section class="head-navigation">
         <img class="logo" src="./src/images/logo.png" alt="Логотип Art.net">
-        <nav>
+        <nav class="head-nav">
             <a href="./tutors.html">Преподаватели</a>
             <a href="./about-us.html">О нас</a>
             <a href="./students-works.html">Работы учеников</a>
@@ -25,6 +25,11 @@
             <img src="./src/images/Telegram%20App.png" alt="Логотип Telegram">
         </div>
         <p>+7 (921 ) 728-75-19</p>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </section>
     <section class="welcome-slider">
         <div id="image-comparison">
@@ -44,10 +49,74 @@
     </section>
 </header>
 <main>
-    <section>
-
+    <section class="services">
+        <div class="services-header">
+            <h2>Наши Услуги</h2>
+        </div>
+        <article>
+            <div class="services-cards">
+                <img src="./src/images/Card1.png" alt="card1">
+                <h2>Групповые занятия</h2>
+                <p>Регулярные занятие по абонементу. 6+</p>
+            </div>
+            <div class="services-cards">
+                <img src="./src/images/Card2.png" alt="card2">
+                <h2>Индивидуальные занятия</h2>
+                <p>Занятия по индивидуальной программе один на один с художником.</p>
+            </div>
+            <div class="services-cards">
+                <img src="./src/images/Card3.png" alt="card3">
+                <h2>Сертификат</h2>
+                <p>Дарите близким мастер-классы, курсы и праздники</p>
+            </div>
+            <div class="services-cards">
+                <img src="./src/images/Card4.png" alt="card4">
+                <h2>Мастер-классы</h2>
+                <p>Картина на холсте без навыков рисования за один сеанс. 6+</p>
+            </div>
+        </article>
+        <div class="price-cards"><h3>4000р.</h3></div>
+        <div class="price-cards"><h3>6000р.</h3></div>
+        <div class="price-cards"><h3>3000р.</h3></div>
+        <div class="price-cards"><h3>5000р.</h3></div>
+        <a href="" class="services-link">Показать ещё</a>
+    </section>
+    <section class="info">
+        <div>
+            <img src="./src/images/Ellipse.png" alt="ellipse" class="figures">
+            <img src="./src/images/Triangle.png" alt="triangle" class="figures">
+            <img src="./src/images/SmallElipse.png" alt="small-ellipse" class="figures">
+            <img src="./src/images/Star.png" alt="star" class="figures">
+        </div>
+        <img src="./src/images/Info.png" alt="info">
+        <article>
+            <img src="./src/images/logo.png" alt="logo">
+            <p>– это не просто студия, это целый мир, где искусство оживает и соединяет людей. Здесь каждый найдет свою нить вдохновения, которая приведет к вершинам творчества.</p>
+        </article>
+    </section>
+    <section class="form">
+        <div class="form-group">
+            <form action="post">
+                <h2>Оставьте заявку</h2>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <input type="text" placeholder="Телефон">
+                <button type="submit">Подтвердить</button>
+            </form>
+            <img src="./src/images/logo.png" alt="logo">
+        </div>
     </section>
 </main>
-<script src="./src/scripts/index.js"></script>
+<footer>
+    <div>
+        <img src="./src/images/logo-footer.png" alt="logo">
+        <p>© Все права защищены</p>
+    </div>
+    <img src="./src/images/Triangle.png" alt="triangle">
+</footer>
+<script src="src/scripts/adapt.js"></script>
+<script src="src/scripts/slider-before-after.js"></script>
+<script src="src/scripts/cards-main-page.js"></script>
+<script src="src/scripts/cards-main-modal.js"></script>
 </body>
 </html>

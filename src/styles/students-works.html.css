@@ -143,20 +143,6 @@ a:hover {
     margin-top: 0;
 }
 
-.header-small-article {
-    background: #D3F8E2;
-    max-width: 570px;
-    max-height: 105px;
-    border-radius: 20px;
-    padding: 1px 15px 1px 15px;
-    font-size: 24px;
-    margin-top: 29px;
-}
-
-.header-small-article > p {
-    margin-top: 10px;
-}
-
 .arrow-header > img {
     margin-top: 10px;
     margin-left: 60%;
@@ -242,7 +228,6 @@ main {
 
 .services-cards:hover {
     opacity: 50% ;
-    transform: rotateZ(4deg);
 }
 
 .price-cards {
@@ -307,126 +292,6 @@ main {
     margin-top: 40px;
 }
 
-.info {
-    position: relative;
-    display: flex;
-    margin-top: 244px;
-    justify-content: center;
-}
-
-.info > article {
-    background: #A9DEF9;
-    max-height: 288px;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 70px;
-}
-
-.info > article > p {
-    max-width: 445px;
-    font-family: Roboto;
-    font-size: 24px;
-}
-
-.info > div {
-    position: absolute;
-    top:-200px;
-}
-
-.figures{
-    position: absolute;
-}
-
-.figures:nth-of-type(1){
-    left: -500px;
-    top: 60px;
-}
-
-.figures:nth-of-type(2){
-    right: -300px;
-    top:60px;
-}
-
-.figures:nth-of-type(3) {
-    top: 650px;
-    right: -300px;
-}
-
-.figures:nth-of-type(4) {
-    top: 730px;
-    left: -180px;
-}
-
-.form {
-    margin-top: 177px;
-    display: flex;
-    justify-content: center;
-}
-
-.form-group {
-    background: #D3F8E2;
-    border-radius: 20px;
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
-
-.form-group > form {
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-}
-
-.form-group > form > input{
-    background: #A9DEF9;
-    width: 450px;
-    height: 34px;
-    max-width: 450px;
-    max-height: 34px;
-    border-radius: 20px;
-    border:none;
-    padding: 20px;
-    transition: .3s all;
-}
-
-.form-group > form > input::placeholder {
-    color: rgba(0, 0, 0, 0.41);
-    font-family: Roboto;
-    font-size:24px;
-}
-
-.form-group > form > input:hover {
-    opacity: 0.5;
-}
-
-.form-group > form > button {
-    background: #EDE7B1;
-    border-radius: 10px;
-    border: none;
-    max-width:180px;
-    height: 52px;
-    font-family: Roboto;
-    font-size:24px;
-    transition: .3s all;
-}
-
-.form-group > form > button:hover{
-    opacity: 0.5;
-}
-
-.form-group > img {
-    width: 163px;
-    height: 75px;
-}
-
-.form-group > form > h2 {
-    font-family: Lobster;
-    font-size: 36px;
-    margin-top: 0;
-}
-
 footer{
     display: flex;
     justify-content: center;
@@ -456,10 +321,6 @@ footer > img {
     width: 25px;
     height: 3px;
     background-color: #333;
-}
-
-.modal-div2 > button {
-    margin-top: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -499,7 +360,7 @@ footer > img {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 10;
         transition: transform 0.3s ease-out;
-        transform: translateX(100%); /
+        transform: translateX(100%);
         width: 100%;
         max-width: 300px;
         height: 100vh;
@@ -546,14 +407,6 @@ footer > img {
         font-size: 26px;
     }
 
-    .header-small-article {
-        max-width: 400px;
-    }
-
-    .header-small-article p{
-        font-size: 20px;
-    }
-
     .services {
         justify-content: center;
         max-width: 500px;
@@ -568,41 +421,4 @@ footer > img {
         max-width: 480px;
     }
 
-    .info article{
-        max-width: 300px;
-        max-height: 320px;
-    }
-
-    .info p {
-        font-size: 20px;
-        margin-top: 0;
-    }
-
-    .modal {
-        width: 500px;
-        max-width: 800px;
-    }
-
-    .modal-div2 {
-        margin-top: 50px;
-    }
-
-    .modal-div2 > img{
-        width: 340px;
-        max-width: 400px;
-    }
-
-    .modal-div2 > button {
-        margin-top: 100px;
-    }
-
-    .modal-div1 > p {
-        font-size: 20px;
-    }
-
-    .modal-div1 > h2 {
-        font-size: 24px;
-    }
-
 }
-
