@@ -16,7 +16,7 @@ header {
     gap: 16px;
     min-height: 1200px;
     max-height: 1300.5px;
-    background: url("../images/head-bg.png") center top / 100% 600px no-repeat;
+    background: url("../images/head-bg.png") center top / 100% 1200px no-repeat;
 }
 .head-navigation{
     display: flex;
@@ -90,85 +90,90 @@ footer > img {
     background-color: #333;
 }
 
-h2{
+h3, h2, span{
     font-family: Lobster;
+
 }
 
-.masters-info h2{
+h3{
+    font-size: 32px;
+}
+
+.dot{
+    color:#E4C1F9;
+}
+
+span{
+    font-size: 32px;
+}
+
+.header-article{
+    display: flex;
+    padding-top: 50px;
+}
+
+.header-info-block {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.header-info-block h2{
+    font-size: 48px;
+}
+
+.about-main-block h2{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.about-info-block{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-article p{
-    width: 570px;
-    padding:20px 0px 20px 0px;
-    text-indent: 10px;
-    background: #D3F8E2;
-    border-radius: 20px;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
+.about-text-block{
+    width: 305px;
 }
 
-.img-border{
-    padding: 10px;
-    border:2px solid #A9DEF9;
-    background: white;
-    max-height: 521px;
+.numbers-color-text-pink{
+    color: #E4C1F9;
+    font-size: 64px;
+    font-family: Lobster;
 }
 
-.info-text-block{
+.numbers-color-text-green{
+    color: #D3F8E2;
+    font-size: 64px;
+    font-family: Lobster;
+}
+
+.numbers-color-text-blue{
+    color: #A9DEF9;
+    font-size: 64px;
+    font-family: Lobster;
+}
+
+.numbers-color-text-yellow{
+    color: #EDE7B1;
+    font-size: 64px;
+    font-family: Lobster;
+}
+
+.footer-text-first{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width: 400px;
-    height: 429px;
-    padding: 20px;
-    border:2px solid #A9DEF9;
-    margin-top: 350px;
-    margin-right: -370px;
 }
 
-.info-text-block-2 {
+.footer-text-second{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width: 400px;
-    height: 429px;
-    padding: 20px;
-    border:2px solid #A9DEF9;
 }
 
-.master-card-content {
+.about-info-block{
     display: flex;
-    margin-right: 120px;
-}
-
-.master-card-content-2 {
-    display: flex;
-    margin-left: 160px;
-    margin-top: -300px;
-}
-
-.master-card-first {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: 170px;
-}
-
-.master-card-right{
-    display: flex;
-    justify-content: end;
-    margin-top: -500px;
-}
-
-.master-card-left{
-    display: flex;
-    justify-content: start;
+    margin-left: ;
 }
 
 @media (max-width: 1024px) {
@@ -241,31 +246,5 @@ h2{
 
     body {
         overflow-x: hidden;
-    }
-
-    .master-card-content-2 {
-        margin-top: 100px;
-        margin-left: 0;
-    }
-
-    .master-card-content {
-        margin-right: 0;
-    }
-
-    .master-card-first {
-        margin-top: 0;
-        margin-left: 200px;
-        margin-left: 200px;
-    }
-
-    .master-card-right {
-        display: flex;
-        justify-content: center;
-        margin-top: 0;
-    }
-
-    .master-card-left {
-        display: flex;
-        justify-content: center;
     }
 }
