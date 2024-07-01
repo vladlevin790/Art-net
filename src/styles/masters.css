@@ -268,4 +268,8 @@ h2{
         display: flex;
         justify-content: center;
     }
+
+    footer > div {
+        margin-right: 200px;
+    }
 }

@@ -604,5 +604,9 @@ footer > img {
         font-size: 24px;
     }
 
+    footer > div {
+        margin-right: 200px;
+    }
+
 }
 

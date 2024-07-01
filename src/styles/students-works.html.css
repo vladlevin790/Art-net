@@ -413,4 +413,8 @@ footer > img {
         max-width: 480px;
     }
 
+    footer > div {
+        margin-right: 200px;
+    }
+
 }
