@@ -23,12 +23,12 @@ function imageComparison(selector) {
 
     sliderButton.addEventListener("mousedown", (e) => {
         isDragging = true;
-        updateSliderPosition(e.pageX);
+        updateSliderPosition(e.clientX);
     });
 
     document.addEventListener("mousemove", (e) => {
         if (isDragging) {
-            updateSliderPosition(e.pageX);
+            updateSliderPosition(e.clientX);
         }
     });
 
@@ -38,12 +38,12 @@ function imageComparison(selector) {
 
     sliderButton.addEventListener("touchstart", (e) => {
         isDragging = true;
-        updateSliderPosition(e.touches[0].pageX);
+        updateSliderPosition(e.touches[0].clientX);
     });
 
     document.addEventListener("touchmove", (e) => {
         if (isDragging) {
-            updateSliderPosition(e.touches[0].pageX);
+            updateSliderPosition(e.touches[0].clientX);
         }
     });
 
@@ -51,14 +51,16 @@ function imageComparison(selector) {
         isDragging = false;
     });
 
-    function updateSliderPosition(pageX) {
-        const offset = pageX - comparison.offsetLeft;
+    function updateSliderPosition(clientX) {
+        const offset = clientX - comparison.getBoundingClientRect().left;
         const width = comparison.offsetWidth;
 
-        let newPosition = (offset < 0) ? 0 : (offset > width) ? width : offset;
+        let newPosition = Math.max(0, Math.min(offset, width));
 
         sliderButton.style.left = newPosition + "px";
         before.style.width = newPosition + "px";
+
+        console.log(`newPosition: ${newPosition}, offset: ${offset}, width: ${width}`);
     }
 }
 
