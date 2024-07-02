@@ -14,7 +14,9 @@
 <body>
 <header>
     <section class="head-navigation">
-        <img class="logo" src="./src/images/logo.png" alt="Логотип Art.net">
+        <a href="index.html">
+            <img class="logo" src="./src/images/logo.png" alt="Логотип Art.net">
+        </a>
         <nav class="head-nav">
             <a href="./masters.html">Наши мастера</a>
             <a href="./about-us.html">О нас</a>
@@ -79,7 +81,6 @@
         <div class="price-cards"><h3>6000р.</h3></div>
         <div class="price-cards"><h3>3000р.</h3></div>
         <div class="price-cards"><h3>5000р.</h3></div>
-        <a href="" class="services-link">Показать ещё</a>
     </section>
     <section class="info">
         <div>
@@ -114,9 +115,15 @@
     </div>
     <img src="./src/images/Triangle.png" alt="triangle">
 </footer>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section"></div>
+</div>
+<script src="src/scripts/load-animation.js"></script>
 <script src="src/scripts/adapt.js"></script>
 <script src="src/scripts/slider-before-after.js"></script>
 <script src="src/scripts/cards-main-page.js"></script>
 <script src="src/scripts/cards-main-modal.js"></script>
+<script src="src/scripts/appearence-animation.js"></script>
 </body>
 </html>
